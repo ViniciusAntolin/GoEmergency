@@ -1,0 +1,37 @@
+#chatpacientes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#chatpacientes .cardpessoa:first-child{
+    padding-top: 20px;
+}
+
+#chatpacientes .cardpessoa:last-child .profilepessoa{
+    border-bottom: 0;
+}
+
+.cardpessoa{
+    display: flex;
+    gap: 15px;
+    padding: 10px;    
+    align-items: center;
+    
+    transition: background 0.2s;
+}
+
+.cardpessoa:hover{
+    background-color: #F5F6F6;
+    cursor: pointer;
+}
+
+.cardpessoa img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+}
+
+.profilepessoa p{
+   font-size: 14px;
+}

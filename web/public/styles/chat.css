@@ -1,0 +1,143 @@
+:root{
+  background-color: #E3E1DD;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#conversas{
+    width: 25%;
+    height: 100%;
+    background-color: #FFFFFF;
+    
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 2px #999;
+}
+
+#headerconversa{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    padding: 10px;
+    
+    background-color: #F0F2F5;
+    border-radius: 10px 0 0 0;
+    border-right: 1px solid #E3E1DD;
+    border-bottom: 1px solid #E3E1DD;
+}
+
+#headerconversa img{
+    width: 49px;
+    border-radius: 50%;
+}
+
+#chatmedicosespecialistas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#chatmedicosespecialistas .cardmedico:first-child{
+    padding-top: 20px;
+}
+
+#chatmedicosespecialistas .cardmedico:last-child .profilemedico{
+    border-bottom: 0;
+}
+
+.cardmedico{
+    display: flex;
+    gap: 15px;
+    padding: 5px 15px 0;    
+    
+    transition: background 0.2s;
+}
+
+.cardmedico:hover{
+    background-color: #F5F6F6;
+    cursor: pointer;
+}
+
+.cardmedico img{
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+}
+
+.profilemedico{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    
+    border-bottom: 1px solid #e9edef;
+}
+
+.profilemedico p+p{
+    margin-bottom: 10px;
+   color: #8F9BA3;
+   font-size: 14px;
+}
+
+#bemvindochat{
+    border-radius: 0 10px 10px 0;
+    background-color: #F0F2F5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    width: 50%;
+    box-shadow: 1px 0 1px #999;
+}
+
+#bemvindochat img{
+    width: 360px;
+}
+
+#bemvindochat h3{
+    font-weight: 400;
+    color: #41525D;
+}
+
+#bemvindochat p{
+    max-width: 80%;
+    text-align: center;
+    font-size: 14px;
+    color: #8F9BA3;
+}
+
+footer{
+    position: unset;
+}
+
+
+@media only screen and (max-width: 1076px) {
+  #conversas{
+   width: 60%;
+  }
+  
+  #bemvindochat{
+     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #conversas{
+   width: 90%;
+  }
+}

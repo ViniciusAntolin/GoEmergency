@@ -1,0 +1,236 @@
+a{
+    text-decoration: none;
+}
+
+#positionleft{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#openmenu:hover{
+    cursor: pointer;
+    fill: white;
+}
+
+#menupopup{
+    min-width: 200px;
+    max-width: 15vw;
+    background-color: white;
+    height: 100vh;
+    box-shadow: 0 0 1px rgb(200,200,200);
+    position: absolute;
+    top: 10.3%;
+    
+    transition: transform 0.5s;
+}
+
+#menupopup.inactive{
+    transform: translateX(-200px)
+}
+
+#menupopup ul {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 15px 0 0 10px;
+}
+
+#menupopup ul div{
+   display: flex;
+   gap: 10px;
+   padding: 15px;
+   
+   align-items: center;
+}
+
+#menupopup ul div:hover{
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+#menupopup ul div span{
+     color: #9A9A9A;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5vh;
+gap: 30px;
+}
+
+#content h2{
+    align-self: flex-start;
+    font-weight: 50;
+}
+
+#content table{
+    border-spacing: 0;
+    box-shadow: black 0px 0px 2px;
+}
+
+table th{
+    background-color: #444444;
+    color: white;
+    padding: 20px;
+}
+
+#content table td:first-child, table th{
+    font-weight: 400
+}
+
+table tbody tr:nth-child(2n){
+    background-color: #E9E9E9;
+}
+       
+#content table td{
+    border-top: 1px solid #D9DEE2;
+    color: #1E2124;
+    font-weight: 50;
+    padding: 20px;
+}
+
+.editbutton p{
+   background-color: #35B96C;
+}
+
+.deletebutton p{
+    background-color: #FF7851;
+}
+
+.editbutton, .deletebutton{
+    padding: 0 5px !important;
+    text-align: center;
+    
+    transition: opacity 0.2s;
+}
+
+.editbutton p, .deletebutton p{
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.editbutton p:hover, .deletebutton p:hover, #submitbuttonform:hover, #criarbotao:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#editmodal{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenteditmodal, #contentcreatemodal{
+   background-color: #f5f7f9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+#contenteditmodal.inactive, #contentcreatemodal.inactive{
+    display: none;
+}
+
+#headereditmodal{
+    position: relative;
+}
+
+.personalinformationinput, .addressinformation{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-bottom: 10px
+}
+
+form input, #profile{
+    padding: 10px;
+    box-shadow: 0 0 1px black;
+    border-radius: 3px;
+}
+
+form h3{
+    margin: 10px 0;
+}
+
+#headereditmodal{
+   display: flex;
+align-items: center;
+height: 50px;
+margin-bottom: 15px;
+}
+
+#headereditmodal p{
+    font-size: 2rem;
+}
+
+#closebuttonmodal, #closebuttoncreatemodal{
+    background: black;
+padding: 5px;
+border-radius: 50%;
+position: absolute;
+  top: 10px;
+  right: 5px;
+
+}
+
+#closebuttonmodal:hover, #closebuttoncreatemodal:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#submitbuttonform{
+    width: 200px;
+    border: 0;
+    background: #057AFE;
+    color: white;
+    margin-top: 20px;
+    
+    transition: opacity 0.2s;
+}
+
+#criarbotao{
+      align-self: flex-start;
+  padding: 15px;
+  background: #057AFE;
+  color: white;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+/* medico */
+
+.UFCRM, #especialidade{
+    height: 50px;
+}
+
+#containertable{
+    max-width: 80vw;
+    overflow-x: scroll;
+}
+
+/* */ 
+
+footer{
+    z-index: 1;
+}

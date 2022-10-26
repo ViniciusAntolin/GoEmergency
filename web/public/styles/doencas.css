@@ -1,0 +1,224 @@
+.overflowhidden{
+    overflow-y: hidden;
+}
+
+main{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+#content{
+min-width: 564px;
+max-width: 50%;
+border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    margin-bottom: 150px;
+}
+
+#logo{
+  width: 20vw;
+  min-width: 200px;
+}
+
+#recomendacao{
+    display: flex;
+    min-height: 35vh;
+    border-radius: 10px;  
+}
+
+#recomendacao, #causas{
+    box-shadow: 0 0 2px black;
+    background-color: #ffff;
+}
+
+#textrecomendacao, #imgmedicoicon, #causas{
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#textrecomendacao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    font-weight: 300;
+    background-color: #ffff;
+}
+
+#textrecomendacao h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#imgmedicoiconbackground{
+    background-color: #2F91EA;
+
+    border-radius: 0 10px 10px 0;
+}
+
+#tipodeconsulta{
+    display: flex;
+    gap: 20px;
+}
+
+#tipodeconsulta p strong{
+    display: block;
+    font-weight: 450;
+}
+
+#tipodeconsulta p:first-child{
+    padding-right: 20px;
+    border-right: 1px solid rgb(206, 204, 204);
+}
+
+#causas h6{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#causas #line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(232, 226, 226);
+
+    margin: 15px 0;
+}
+
+.doencacard{
+    padding: 15px;
+    border-radius: 10px;
+
+    border-bottom: 1px solid rgb(232, 226, 226);
+}
+
+.doencacard:hover, #closebuttondoenca{
+    background-color: #F3F5F7;
+    cursor: pointer;
+}
+
+.tipodeevidencia, .verdetalheasicon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    color: #1471C9;
+}
+
+.tipodeevidencia span, #footercausas{
+    color: grey;
+    font-weight: 300;
+    font-size: 14px;
+
+    margin-left: 5px;
+}
+
+.verdetalheasicon{
+    justify-content: flex-end;
+
+    font-size: 13px;
+}
+
+.verdetalheasicon img{
+    width: 20px;
+}
+
+#modaldoenca{
+    background: rgba(33, 39, 48, 0.4);
+z-index: 1;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#doencaativabackground{
+    position: absolute;
+width: 50vw;
+height: 100vh;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    background: #FFFFFF;
+    overflow-y: scroll;
+
+    top: 0;
+    right: 0;
+}
+
+#doencahead{
+    width: 100%;
+    height: 20%;
+
+    background-color: #F3F5F7;
+
+    position: relative;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#closebuttondoenca{
+    align-self: flex-end;
+}
+
+#nomedoenca p{
+    font-size: 25px;
+    font-weight: 380;
+}
+
+#doencadetalhes{
+    padding: 40px 60px 60px 40px;
+    background: #FFFFFF;
+}
+
+#doencadetalhes h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#doencadetalhes ul{
+    margin: 10px 30px;
+}
+
+#doencadetalhes ul li, #doencadetalhes pre{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#doencadetalhes pre{
+    margin: 10px 0;
+    white-space: pre-line;
+}
+
+#togglediv{
+    top: 12%;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  #doencaativabackground{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #content{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  #imgmedicoiconbackground{
+      display: none;
+  }
+}

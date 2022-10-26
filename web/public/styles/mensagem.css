@@ -1,0 +1,128 @@
+#mensagens{
+    border-radius: 0 10px 10px 0;
+    background-color: #F0F2F5;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+    position: relative;
+    
+    width: 50%;
+    box-shadow: 1px 0 1px #999;
+}
+
+.cardmedico.active{
+    background-color: #e8f0fc;
+}
+
+#headermensagens{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    width: 100%;
+    
+    padding: 10px 20px;
+    border-bottom: 1px solid #E3E1DD;
+}
+
+#headermensagens img{
+    width: 49px;
+    border-radius: 50%;
+}
+
+#historico{
+    height: 100%;
+    width: 90%;
+    overflow-y: scroll;
+    padding-right: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.daydate{
+    display: flex;
+    align-self: center;
+    background-color: #FFF;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    color: gray;
+}
+
+.mensagempaciente, .mensagemmedico{
+    display: flex;
+    gap: 8px;
+    
+     width: fit-content;
+    padding: 7px 9px;
+    border-radius: 10px;
+
+}
+
+.mensagempaciente span:first-child,
+.mensagemmedico span:first-child{
+    font-weight: 300;
+}
+
+.mensagempaciente span + span, .mensagemmedico span + span{
+      line-height: 30px;
+    font-size: 13px;
+    color: #718388;
+}
+
+.mensagempaciente{
+    background-color: #D9FDD3;
+    align-self: flex-end;
+}
+
+
+.mensagemmedico{
+    background-color: #ffffff;
+}
+
+#enviararea{
+   display: flex;
+   gap: 20px;
+   width: 92%;
+   
+   background-color: #FFFFFF;
+   border-radius: 40px;
+   margin-bottom: 10px;
+    
+   padding: 10px 20px;
+}
+
+#enviararea input{
+    width: 100%;
+    padding: 10px;
+}
+
+
+#enviararea img{
+    background-color: #2BA3F4;
+    padding: 15px;
+    border-radius: 42% 42% 42% 42%;
+    
+    transition: opacity 0.2s;
+}
+
+#enviararea img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+footer{
+    position: unset;
+}
+
+@media only screen and (max-width: 1200px) {
+  #conversas{
+    display: none;
+  }
+}

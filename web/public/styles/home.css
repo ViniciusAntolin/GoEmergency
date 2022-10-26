@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root{
+  background-color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.whitecolor{
+  color: rgb(237, 237, 237);
+}
+
+.greycolor{
+  color: grey;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+
+  font-size: 1.1rem;
+
+  top: 0;
+
+  z-index: 5;
+
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+
+  box-shadow: 1px 1px 3px rgb(215, 214, 214);
+}
+
+header ul{
+  width: 80%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#positionright{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#positionright li{
+  list-style-type: none;
+}
+
+#positionright li a{
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  gap: 5px;
+  
+  color: #173552;
+}
+
+#positionright li a:hover{
+  color: #5b98d2;
+}
+
+#positionright li:last-child a {
+  color: white;
+}
+
+#cadastrohome:hover{
+  transform: scaleX(1.05);
+
+  transition: 0.2s;
+}
+
+#cadastrohome{
+  padding: 10px 20px;
+  background-color: #3577b4;
+
+  border-radius: 10px;
+}
+
+#logo{
+    max-width: 18vw;
+    min-width: 193px;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+
+#maincontent{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  width: 33vw;
+  font-size: 18px;
+}
+
+#telaprincipal{
+    background: url('../assets/wallpaper-principal.jpg') left;
+    padding: 10vw;
+}
+
+#verificarsintomas{
+    display: flex;
+    background: #3577B4;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    width: max-content;
+    gap: 10px;
+    align-items: center;
+}
+
+#verificarsintomas:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#especialistas{
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 5vw;
+  
+}
+
+#especialistas h2{
+  color: #555555;
+  font-size: 30px;
+}
+
+#especialistas p{
+  color: grey;
+}
+
+#especialistascards{
+  display: flex;
+  column-gap: 20px;
+  
+  flex-wrap: wrap;
+}
+
+.especialistacard{
+  padding: 50px 50px 20px 20px;
+  border-radius: 10px;
+
+  width: 200px;
+
+  box-shadow: 1px 1px 3px rgb(215, 214, 214);
+}
+
+.especialistacard img{
+    width: 32px;
+    height: 32px;
+}
+
+.linhadivisoria{
+  width: 100%;
+  height: 1px;
+
+  margin-top: 3vh;
+  background-color: rgb(182, 182, 182);
+}
+
+#depoimentos{
+  display: flex;
+  column-gap: 50px;
+
+  margin-top: 100px;
+}
+
+#primeirodepoimento{
+  box-shadow: none;
+  border: none;
+}
+
+#primeirodepoimento a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+
+  align-self: center;
+
+  background-color: #3577b4;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#primeirodepoimento a:hover{
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+#primeirodepoimento h3{
+  font-size: 30px;
+  color: rgb(105, 104, 104);
+}
+
+.depoimento{
+  width: 400px;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 10px;
+
+  border: 0.2px solid rgb(196, 196, 196);
+
+  display: grid;
+  row-gap: 25px;
+
+  box-shadow: 1px 1px 3px rgb(187, 185, 185);
+}
+
+.depoimento :nth-child(2){
+  font-size: 20px;
+}
+
+
+.depoimento p:last-child{
+  font-size: 14px;
+}
+
+#sobre img{
+    max-width: 300px;
+
+  border-radius: 10px;
+}
+
+#sobre{
+  display: flex;
+  justify-content: center;
+  
+  width: 90%;
+  margin: 100px auto;
+
+  column-gap: 30px;
+}
+
+#textosobre{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20vw;
+  gap: 20px;
+}
+
+#textosobre h3{
+  font-size: 25px;
+  color: #555555;
+}
+
+footer{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    
+    background-color: white;
+
+    box-shadow: 1px 1px 3px rgb(85, 84, 84);
+
+    height: 60px;
+}
+
+@media only screen and (max-width: 1165px) {
+  #especialistascards{
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+  }
+  
+  #textosobre{
+      padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1067px) {
+  #maincontent{
+    width: 80%;
+  }
+  
+  #homelink, #sobrelink{
+      display: none;
+  }
+  
+  #header ul{
+      width: 100%;
+      padding: 0 5vh;
+  }
+  
+  #sobre img{
+      display: none;
+  }
+}
+
+
+@media only screen and (max-width: 948px) {
+  header ul, #positionright{
+   flex-direction: column;
+  }
+
+  
+  header{
+      height: auto;
+  }
+  
+  #cadastrohome{
+      margin-bottom: 20px;
+  }
+  
+   #maincontent{
+    width: 100%;
+  }
+  
+  #especialistascards{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    gap: 10px;
+    }
+}

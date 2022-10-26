@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: #fff;
+}
+
+
+#content{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+}
+
+#background{
+  padding: 5%;
+  background-color: #2B60C5;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #525252;
+
+  border-radius: 0 7px 7px 0;
+}
+
+#imagebackground{
+  height: 80%;
+  width: 100%;
+}
+
+#login{
+  padding-top: 10%;
+  gap: 2vh;
+  
+  display: grid;
+  grid-template-rows: 15% 15% 1fr;
+  justify-content: center;
+}
+
+#icone{
+  width: 200px;
+  height: 200px;
+}
+
+#iconelogin{
+   display: flex;
+   justify-content: center;   
+}
+
+#textologin{
+   text-align: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+
+#textologin h2{
+  margin-bottom: 5%;
+  font-size: 30px;
+  color: #173552;
+}
+
+#textologin h6{
+  margin-bottom: 2%;
+  font-size: 13px;
+  
+  color: grey;
+}
+
+#formlogin{
+  margin-top: 2vh;
+  height: 70%;
+  display: grid;
+  align-items: center;
+  
+  grid-template-rows: 50% 5% 35%
+}
+
+#formlogin input{
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+
+  border-radius: 8px;
+}
+
+#formlogin label + input{
+  background-color: #eaedee;
+  box-shadow: 0px 0px 5px #2B60C5
+}
+
+#logininputs div{
+    margin-bottom: 15px;
+}
+
+div label{
+  display: block;
+  color: #173552;
+}
+
+#lembrarsenha{
+    text-decoration: none;
+    color: #2B60C5;
+    
+    text-align: end;
+}
+
+#lembrarsenha:hover{
+  opacity: 0.8 ;
+}
+
+#buttonsubmit{
+    background: #2B60C5;
+    height: 50px;
+    color: white;
+    
+    box-shadow: 1px 1px 5px black;
+}
+
+#buttonsubmit:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+#linkcadastrar{
+    margin-bottom: 25px;
+    color: grey;
+    
+    text-align: center;
+}
+
+#linkcadastrar a{
+  text-decoration: none;
+}
+
+#linkcadastrar a:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#linkcadastrar a:visited{
+    color: #2B60C5;
+}
+
+@media only screen and (max-width: 900px) {
+  #content{
+  grid-template-columns: 0 1fr;
+  }
+  
+  #formlogin{
+    width: 90%;
+    margin: 0 auto;
+    gap: 2vh;
+  }
+}

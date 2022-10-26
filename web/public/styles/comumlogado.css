@@ -1,0 +1,26 @@
+#sair{
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   color: rgb(204, 0, 0);
+   
+   transition: color 0.3s;
+}
+
+#sair:hover{
+    color: rgb(100, 0, 0);
+    cursor: pointer;
+}
+
+#logo{
+    max-width: 14vw;
+    min-width: 200px;
+}
+
+#togglediv{
+    top: 12%;
+}
+
+header ul{
+    width: 95%;
+}

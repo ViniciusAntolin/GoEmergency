@@ -1,0 +1,10 @@
+.mensagempaciente{
+    background-color: #ffffff !important;
+    align-self: flex-start !important;
+}
+
+
+.mensagemmedico{
+    background-color: #D9FDD3 !important;
+    align-self: flex-end !important;
+}
